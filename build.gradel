@@ -24,11 +24,3 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
-
-
-sonarqube {
-    properties {
-        property 'sonar.host.url', 'http://65.0.45.12:9000'
-        property 'sonar.login', System.getenv("sonar-token")
-    }
-}
