@@ -27,7 +27,10 @@ test {
 
 sonarqube {
     properties {
+        property "sonar.projectKey", "sampleWeb"
+        property "sonar.projectName", "Sample Web App"
+        property "sonar.projectVersion", "1.0"
         property "sonar.host.url", "http://65.0.45.12:9000"
-        property "sonar.login", System.getenv("SONAR_TOKEN")
+        property "sonar.login", System.getenv("sonar-token")
     }
 }
