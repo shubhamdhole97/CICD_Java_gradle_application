@@ -27,10 +27,7 @@ test {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "java-gradle-webapp"
-        property "sonar.projectName", "Java Gradle Web Application"
-        property "sonar.projectVersion", "1.0"
         property "sonar.host.url", "http://65.0.45.12:9000"
-        property "sonar.login", System.getenv("sonar-token")
+        property "sonar.login", System.getenv("SONAR_TOKEN")
     }
 }
