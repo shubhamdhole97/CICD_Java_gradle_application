@@ -1,9 +1,9 @@
 plugins {
-	id 'org.springframework.boot' version '2.5.4'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-	id 'java'
-	id 'war'
-	id 'org.sonarqube' version '3.3'
+    id 'org.springframework.boot' version '2.5.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id 'war'
+    id 'org.sonarqube' version '3.3'
 }
 
 group = 'com.example'
@@ -11,24 +11,26 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }
-
 
 sonarqube {
     properties {
-        property 'sonar.host.url', 'http://65.0.45.12:9000'
-        property "sonar.login", System.getenv("sonar-token")
+        property "sonar.host.url", "http://13.126.177.239:9000"
+        property "sonar.login", "sqp_998665269862f604cb75efed1e001668d6a60411"
+        property "sonar.projectKey", "shubham"
+        property "sonar.projectName", "shubham"
+        property "sonar.projectVersion", "1.0"
     }
 }
